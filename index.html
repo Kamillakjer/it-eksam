@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8";
+<link href="https://fontsgoogleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
+<style>
+/*Ovenfor skrives en kode, der gør at danske bogstaver og tegn som &,@ osv kan ses af brugeren på hjemmesiden.*/
+/*Nedenfor styles de forskellige class'es, id'er og grupper. Det betyder, at der her præciseres og tilpasses i størrelse og farve.*/
+header {
+  text-align: center;
+  background-image: url("coverbillede1.jpg");
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+font-family: "londrina shadow", cursive, bold;
+color: lightgrey;
+margin: 0px 0px 0px 0px;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "londrina shadow", cursive;
+  margin: 40px 0px 0px 0px;
+}
+
+
+ul {
+  padding: 20px;
+  color: rgba(0,0,0,0,0.5);
+  background: rgba(0,0,0,0.5);
+  bottom: 0;
+  margin-top: 200px;
+
+}
+
+li {
+  display: inline;
+  padding: 0px 30px 0px 30px;
+  float: center;
+  font-size: 30px;
+}
+
+div {
+  position: left;
+  text-align: left;
+  margin: auto;
+  max-width: 1000px;
+  color: #696969;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+a {
+  color: lightgrey;
+}
+
+p {
+  font-size: 20px;
+  color: #696969;
+}
+
+/*Denne kode nedenfor sørger for, at hjemmesiden ved medieskift tilpasser sig skærmstørrelsen.*/
+@media (max-width: 500px){
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<!--Nedenfor skrives det, der fremgår på hjemmesiden. Her indtastes den tekst, som brugeren kan se.-->
+<body>
+<!--"br", der gennem koden optræder flere gange betegner linjeskift og står for "break". Der bliver altså skabt et mellemrum.-->
+<header>
+  <h1>OEG'S EVENTS</h1>
+  <ul> <!--Her laves en uordnet punktliste. Det er den, brugeren vil se som værende menulinjen.-->
+    <li><a href="underside_kommendefester.html">Kommende fester</a></li>
+    <li><a href="underside_billederfragamlefester.html">Billeder fra gamle fester</a></li>
+    <li><a href="underside_regleroggenerelinfo.html">Regler & Generel info</a></li>
+    <li><a href="underside_kontaktogansøgning.html">Kontakt & Ansøg</a></li>
+    <li><a href="underside_login.html">Login</a></li>
+  </ul>
+</header>
+<div>
+<h2>Velkommen til OEG's festudvalg... Her kan du:</h2>
+<p>1. <i>"Finde info og tilmelding til kommende fester"</i><br>
+  <br>
+  2. <i>"Se billeder fra gamle fester"</i><br>
+  <br>
+  3. <i>"Kontakte os fra udvalget"</i><br>
+  <br>
+  4. <i>"Læse om retningslinjer og regler for arrangementerne på skolen"</i><br>
+  <br>
+  5. <i>"Ansøge om at blive en del af festudvalget"</i><br>
+  </p>
+</div>
+
+<p><br></p>
+
+</body>

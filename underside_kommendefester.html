@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8";
+<link href="https://fontsgoogleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
+<style>
+/*Ovenfor skrives en kode, der gør at danske bogstaver og tegn som &,@ osv kan ses af brugeren på hjemmesiden.*/
+/*Nedenfor styles de forskellige class'es, id'er og grupper. Det betyder, at der her præciseres og tilpasses i størrelse og farve.*/
+header {
+  text-align: center;
+  background-image: url("coverbillede1.jpg");
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+font-family: "londrina shadow", cursive, bold;
+color: lightgrey;
+margin: 0px 0px 0px 0px;
+}
+
+h2 {
+font-size: 60px;
+font-family: "londrina shadow", cursive;
+margin-bottom: auto;
+}
+
+
+ul {
+padding: 20px;
+color: rgba(0,0,0,0,0.5);
+background: rgba(0,0,0,0.5);
+bottom: 0;
+margin-top:200px;
+
+}
+
+li {
+display: inline;
+padding: 0px 30px 0px 30px;
+float: center;
+font-size: 30px;
+}
+
+div {
+  margin: auto;
+  max-width: 1000px;
+  color: #696969;
+  position: center;
+  text-align: center;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+a {
+  color: lightgrey;
+}
+
+p {
+  font-size: 20px;
+  color: #696969;
+}
+
+button {
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    font-family: "londrina shadow", cursive;
+    background-color: grey;
+}
+
+/*Denne kode nedenfor sørger for, at hjemmesiden ved medieskift tilpasser sig skærmstørrelsen.*/
+@media (max-width: 500px){
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<!--Nedenfor skrives det, der fremgår på hjemmesiden. Her indtastes den tekst, som brugeren kan se.-->
+<body>
+<!--"br", der gennem koden optræder flere gange betegner linjeskift og står for "break". Der bliver altså skabt et mellemrum.-->
+<header>
+  <h1>Kommende fester</h1>
+  <ul><!--Her laves en uordnet punktliste. Det er den, brugeren vil se som værende menulinjen.-->
+    <li><a href="Eksamen.html">Forside</a></li>
+    <li><a href="underside_billederfragamlefester.html">Billeder fra gamle fester</a></li>
+    <li><a href="underside_regleroggenerelinfo.html">Regler & Generel info</a></li>
+    <li><a href="underside_kontaktogansøgning.html">Kontakt & Ansøg</a></li>
+    <li><a href="underside_login.html">Login</a></li>
+  </ul>
+</header>
+<div>
+<h2>Velkommen til OEG's kommende fester:</h2> <br>
+
+<script>
+/*Ved denne kommer brugeren til købssiden, hvor han/hun kan købe billet til den kommende fest.*/
+function aaben()
+{
+  window.open("Billet.html")
+}
+</script>
+
+<button onclick="aaben()">Køb billet her!</button>
+
+  <p><i>"Klik her for at bekræfte dit køb. Det er din sikkerhed for at have en billet!"</i><br> <!--Her er indsat en Google Forms, der fungerer som en database.
+  Det betyder, at når brugeren her bekræfter sit køb, da vil administratoren have mulighed for at se, hvem og hvor mange, der deltager til festerne.-->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOqIvw8ZQ8l3o_Qw54LPrCB36NwXhkz_KOeEwoMAIvpNCZPw/viewform?embedded=true" width="640" height="565" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+</div>
+<p><br></p>
+
+</body>

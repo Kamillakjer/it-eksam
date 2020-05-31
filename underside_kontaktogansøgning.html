@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8";
+<link href="https://fontsgoogleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
+<style>
+/*Ovenfor skrives en kode, der gør at danske bogstaver og tegn som &,@ osv kan ses af brugeren på hjemmesiden.*/
+/*Nedenfor styles de forskellige class'es, id'er og grupper. Det betyder, at der her præciseres og tilpasses i størrelse og farve.*/
+header {
+  text-align: center;
+  background-image: url("coverbillede1.jpg");
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+font-family: "londrina shadow", cursive, bold;
+color: lightgrey;
+margin: 0px 0px 0px 0px;
+}
+
+h2 {
+font-size: 40px;
+font-family: "londrina shadow", cursive;
+margin-bottom: auto;
+}
+
+
+ul {
+padding: 20px;
+color: rgba(0,0,0,0,0.5);
+background: rgba(0,0,0,0.5);
+bottom: 0;
+margin-top:200px;
+
+}
+
+li {
+display: inline;
+padding: 0px 30px 0px 30px;
+float: center;
+font-size: 30px;
+}
+
+div {
+  margin: 5px 50px;
+  max-width: 600px;
+  color: #696969;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+a {
+  color: lightgrey;
+}
+
+p {
+  font-size: 20px;
+  color: #696969;
+}
+
+.profil {
+  border-radius: 400px;
+  height: 350px;
+}
+
+/*Nedenfor placeres hver google forms et specifikt sted på hjemmesiden. Det gøres vha ID'et,
+der definerer det specifikke google forms/tekst. Dette er blevet givet nedefor i den senere kode.*/
+#f1 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  margin: 90px 90px;
+}
+
+
+#f2 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  margin: 90px 90px;
+}
+
+#t1 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  margin-left: 120px;
+}
+
+#t2 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  margin-right: 170px;
+}
+
+/*Denne kode nedenfor sørger for, at hjemmesiden ved medieskift tilpasser sig skærmstørrelsen.*/
+@media (max-width: 500px){
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<!--Nedenfor skrives det, der fremgår på hjemmesiden. Her indtastes den tekst, som brugeren kan se.-->
+<body>
+<!--"br", der gennem koden optræder flere gange betegner linjeskift og står for "break". Der bliver altså skabt et mellemrum.-->
+<header>
+  <h1>Kontakt og ansøgning</h1>
+  <ul><!--Her laves en uordnet punktliste. Det er den, brugeren vil se som værende menulinjen.-->
+    <li><a href="Eksamen.html">Forside</a></li>
+    <li><a href="underside_kommendefester.html">Kommende fester</a></li>
+    <li><a href="underside_billederfragamlefester.html">Billeder fra gamle fester</a></li>
+    <li><a href="underside_regleroggenerelinfo.html">Regler & Generel info</a></li>
+    <li><a href="underside_login.html">Login</a></li>
+  </ul>
+</header>
+<div>
+<h2 id="t1" >Ansøg til OEG's festudvalg her:</h2> <!--Her er indsat en Google Forms, der fungerer som en database.
+Det betyder, at brugeren her kan ansøge om at blive en del af festudvalget på OEG.-->
+<iframe id="f1" src="https://docs.google.com/forms/d/e/1FAIpQLSd87R8BlrJZPxUK0b2gKCV0YOYKUL3b_IT0xEIOb7-tWqa_ow/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+</div>
+<div>
+<h2 id="t2" >Kontakt OEG's festudvalg her:</h2> <!--Her er indsat en Google Forms, der fungerer som en database.
+Det betyder, at brugeren her kan kontake festudvalget på OEG, hvis de har ønsker, spørgsmål mv.-->
+<iframe id="f2" src="https://docs.google.com/forms/d/e/1FAIpQLSfLIC9fx9xQ3YU9Pq5TWF5w7UiN4GoTDviH3zlQL6dsx9dTrg/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0">Indlæser…</iframe>
+</div>
+<p><br></p>
+
+</body>

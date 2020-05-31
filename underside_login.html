@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8";
+<link href="https://fontsgoogleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
+<style>
+/*Ovenfor skrives en kode, der gør at danske bogstaver og tegn som &,@ osv kan ses af brugeren på hjemmesiden.*/
+/*Nedenfor styles de forskellige class'es, id'er og grupper. Det betyder, at der her præciseres og tilpasses i størrelse og farve.*/
+header {
+  text-align: center;
+  background-image: url("coverbillede1.jpg");
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+font-family: "londrina shadow", cursive, bold;
+color: lightgrey;
+margin: 0px 0px 0px 0px;
+}
+
+h2 {
+font-size: 60px;
+font-family: "londrina shadow", cursive;
+margin-bottom: auto;
+}
+
+
+ul {
+padding: 20px;
+color: rgba(0,0,0,0,0.5);
+background: rgba(0,0,0,0.5);
+bottom: 0;
+margin-top:200px;
+
+}
+
+li {
+display: inline;
+padding: 0px 30px 0px 30px;
+float: center;
+font-size: 30px;
+}
+
+div {
+  margin: 5px 50px;
+  max-width: 600px;
+  color: #696969;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+a {
+  color: lightgrey;
+  font-size: 25px;
+}
+
+p {
+  font-size: 20px;
+  color: #696969;
+}
+
+button {
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    font-family: "londrina shadow", cursive;
+    background-color: grey;
+}
+
+label {
+  font-size: 30px;
+  font-family: "londrina shadow", cursive;
+}
+
+#navn {
+  width: 400px;
+  height: 40px;
+}
+
+#pswrd {
+  width: 400px;
+  height: 40px;
+}
+
+
+/*Denne kode nedenfor sørger for, at hjemmesiden ved medieskift tilpasser sig skærmstørrelsen.*/
+@media (max-width: 500px){
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<!--Nedenfor skrives det, der fremgår på hjemmesiden. Her indtastes den tekst, som brugeren kan se.-->
+<body>
+<!--"br", der gennem koden optræder flere gange betegner linjeskift og står for "break". Der bliver altså skabt et mellemrum.-->
+<header>
+  <h1>Login</h1>
+  <ul> <!--Her laves en uordnet punktliste. Det er den, brugeren vil se som værende menulinjen.-->
+    <li><a href="Eksamen.html">Forside</a></li>
+      <li><a href="underside_kommendefester.html">Kommende fester</a></li>
+    <li><a href="underside_billederfragamlefester.html">Billeder fra gamle fester</a></li>
+    <li><a href="underside_regleroggenerelinfo.html">Regler & Generel info</a></li>
+    <li><a href="underside_kontaktogansøgning.html">Kontakt & Ansøg</a></li>
+  </ul>
+</header>
+<script>
+/*I det følgende afsnit laves en login funktion. Denne indeholder en if-sætning, variabler og meget andet,
+der tillader brugeren at indtaste login oplysninger.*/
+var minliste="";
+var brugere=["Admin"];
+var passwords=["123456"];
+var nybruger;
+var nytpassword
+
+function login()
+{
+  var mitnavn=document.getElementById("navn").value;
+  var mitpswrd=document.getElementById("pswrd").value;
+
+  brugerindex = brugere.indexOf(mitnavn);
+  aktpassword=passwords[brugerindex];
+  if (mitpswrd==aktpassword) /*Her bruges en if-sætning. Det betyder, at HVIS passwordet er korret,
+  da vil man kunne gå videre til hjemmesiden og log-innet bliver godkendt*/
+  {
+    window.open("index.html");
+  }
+  else {
+    alert("Dit brugernavn stemmer ikke overens med din kode. Prøv igen!");
+  }
+}
+
+
+</script>
+
+<form>
+<!--Nedefor skrives den kode, der gør brugeren i stand til at se login funktionen.-->
+  <form action="">
+    <label for="fname">Brugernavn:</label><br>
+    <input type="text" id="navn" name="navn" value=""><br>
+    <br>
+    <br>
+    <label for="lname">Password:</label><br>
+    <input type="text" id="pswrd" name="pswrd" value=""><br><br>
+
+</form>
+<br>
+<br>
+
+<button onclick="login()">Login</button><br>
+
+<br>
+
+<div id="felt">
+</div>
+
+</body>

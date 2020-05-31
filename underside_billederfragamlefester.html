@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8";
+<link href="https://fontsgoogleapis.com/css?family=Londrina+Shadow" rel="stylesheet" type="text/css">
+<style>
+/*Ovenfor skrives en kode, der gør at danske bogstaver og tegn som &,@ osv kan ses af brugeren på hjemmesiden.*/
+/*Nedenfor styles de forskellige class'es, id'er og grupper. Det betyder, at der her præciseres og tilpasses i størrelse og farve.*/
+header {
+  text-align: center;
+  background-image: url("coverbillede1.jpg");
+  background-size: cover;
+}
+
+h1 {
+text-align: center;
+font-size: 100px;
+font-family: "londrina shadow", cursive, bold;
+color: lightgrey;
+margin: 0px 0px 0px 0px;
+}
+
+h2 {
+font-size: 50px;
+font-family: "londrina shadow", cursive;
+margin-bottom: auto;
+max-width: 1000px;
+}
+
+
+ul {
+padding: 20px;
+color: rgba(0,0,0,0,0.5);
+background: rgba(0,0,0,0.5);
+bottom: 0;
+margin-top: 200px;
+
+}
+
+li {
+display: inline;
+padding: 0px 30px 0px 30px;
+float: center;
+font-size: 30px;
+}
+
+
+div {
+  margin: 5px 50px;
+  max-width: 600px;
+  color: #696969;
+}
+
+body {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+a {
+  color: lightgrey;
+}
+
+p {
+  font-size: 20px;
+  color: #696969;
+}
+
+
+.krav {
+  width: 100%;
+  height: 350px;
+}
+/*Nedenfor placeres hvert billede et specifikt sted på hjemmesiden. Det gøres vha ID'et,
+der definerer det specifikke billede/tekst. Dette er blevet givet nedefor i den senere kode.*/
+#b1 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 90px;
+}
+
+
+#b2 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 90px;
+}
+
+
+#b3 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 500px 90px;
+}
+
+#b4 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 500px 90px;
+}
+
+#b5 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 1100px 90px;
+}
+
+
+#b6 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 1100px 90px;
+}
+
+
+#b7 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 1510px 90px;
+}
+
+#b8 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 1510px 90px;
+}
+
+#b9 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 2100px 90px;
+}
+
+
+#b10 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 2100px 90px;
+}
+
+
+#b11 {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 2510px 90px;
+}
+
+#b12 {
+  position: absolute;
+  right: 0;
+  top: 100;
+  width: 585.14px;
+  height: 390px;
+  margin: 2510px 90px;
+}
+/*Nedenfor får hver tekst en præcis plads på siden, så de tilpasser sig billederne.*/
+#t1 {
+  position: absolute;
+  top: 100;
+  margin: 0px 500px;
+}
+
+#t2 {
+  position: absolute;
+  top: 100;
+  margin: 1015px 500px;
+}
+
+#t3 {
+  position: absolute;
+  top: 100;
+  margin: 2020px 500px;
+}
+/*Denne kode nedenfor sørger for, at hjemmesiden ved medieskift tilpasser sig skærmstørrelsen.*/
+@media (max-width: 500px){
+  h1 {
+    font-size: 36px;
+  }
+  li {
+    display: block;
+    padding: 5px;
+  }
+}
+
+</style>
+</head>
+
+<!--Nedenfor skrives det, der fremgår på hjemmesiden. Her indtastes den tekst, som brugeren kan se.-->
+<body>
+<!--"br", der gennem koden optræder flere gange betegner linjeskift og står for "break". Der bliver altså skabt et mellemrum.-->
+<header>
+  <h1>Billeder fra gamle fester</h1>
+  <ul><!--Her laves en uordnet punktliste. Det er den, brugeren vil se som værende menulinjen.-->
+    <li><a href="Eksamen.html">Forside</a></li>
+    <li><a href="underside_kommendefester.html">Kommende fester</a></li>
+    <li><a href="underside_regleroggenerelinfo.html">Regler & Generel info</a></li>
+    <li><a href="underside_kontaktogansøgning.html">Kontakt & Ansøg</a></li>
+    <li><a href="underside_login.html">Login</a></li>
+  </ul>
+</header>
+<div>
+<!--I afsnittet nedenfor gives billeder og tekst, der skal placeres et specifikt sted et ID (se blå kode).
+Derudover laves forskellige afsnit, der hver repræsenterer en gammel fest.-->
+<h2 id="t1"> Bond fest 2020</h2>
+<div align="center"><img id="b1" src="1.jpg" class="krav"></div>
+<div align="center"><img id="b2" src="2.jpg" class="krav"></div>
+<div align="center"><img id="b3" src="3.jpg" class="krav"></div>
+<div align="center"><img id="b4" src="4.jpg" class="krav"></div>
+</div>
+
+<div>
+<h2 id="t2">Introfesten 2020</h2>
+<div align="center"><img id="b5" src="5.jpg" class="krav"></div>
+<div align="center"><img id="b6" src="6.jpg" class="krav"></div>
+<div align="center"><img id="b7" src="7.jpg" class="krav"></div>
+<div align="center"><img id="b8" src="8.jpg" class="krav"></div>
+</div>
+
+<div>
+<h2 id="t3">Galla 2019</h2>
+<div align="center"><img id="b9" src="9.jpg" class="krav"></div>
+<div align="center"><img id="b10" src="10.jpg" class="krav"></div>
+<div align="center"><img id="b11" src="11.jpg" class="krav"></div>
+<div align="center"><img id="b12" src="12.jpg" class="krav"></div>
+</div>
+
+</body>
